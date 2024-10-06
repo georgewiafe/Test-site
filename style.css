@@ -2,6 +2,7 @@ body {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
+    margin: 0;
 }
 
 .rotate-image {
@@ -33,4 +34,35 @@ background-color: #111;
 
 .active {
 background-color: #04AA6D;
+}
+#Home{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 600px){
+    #Home{
+        flex-direction: column;
+    }
+    body{
+        font-size: medium;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    #Home{
+        flex-direction: column;
+    }
+    body{
+        font-size: xx-large;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #Home{
+        flex-direction: row;
+    }
+    body{
+        font-size:xx-large;
+        padding: 10px;
+    }
 }
