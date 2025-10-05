@@ -8,7 +8,7 @@ body {
 .rotate-image {
     transform: rotate(90deg);
 }
-ul {
+#navigation ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
@@ -16,11 +16,11 @@ overflow: hidden;
 background-color: #333;
 }
 
-li {
+#navigation ul li {
 float: left;
 }
 
-li a {
+#navigation ul li a {
 display: block;
 color: white;
 text-align: center;
@@ -28,8 +28,14 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#navigation ul li a:hover:not(.active) {
 background-color: #111;
+}
+
+@media only screen and (max-width: 600px) {
+    #navigation ul li a{
+        font-size: 14px;
+    }
 }
 
 .active {
@@ -44,8 +50,20 @@ background-color: #04AA6D;
         flex-direction: column;
     }
     body{
-        font-size: medium;
+        font-size: 12px;
         padding: 10px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -54,15 +72,15 @@ background-color: #04AA6D;
     }
     body{
         font-size: xx-large;
-        padding: 10px;
+        padding: 20px;
     }
 }
-@media only screen and (max-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1444px ){
     #Home{
-        flex-direction: row;
+        flex-direction: column;
     }
     body{
-        font-size:xx-large;
-        padding: 10px;
+        font-size: xx-large;
+        padding: 20px;
     }
 }
